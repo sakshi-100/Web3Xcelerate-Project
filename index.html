@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthSafe - Immersive Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section with Hamburger Menu and Project Logo -->
+    <header>
+        <div class="logo">HealthSafe</div>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation Menu -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li id="login-signup-btn">Login/Sign Up</li>
+            <li>Upload Doc</li>
+            <li>Download Report</li>
+        </ul>
+    </div>
+
+    <!-- Main Landing Section -->
+    <section class="landing">
+        <div class="landing-content">
+            <h1>Welcome to HealthSafe</h1>
+            <p>Your secure platform for managing mental health records on the blockchain.</p>
+            <a href="#get-started" class="cta-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="glow"></div>
+    </div>
+
+    <!-- Login/Signup Modal (Hidden initially) -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 id="form-title">Login</h2>
+                </div>
+                <form id="login-form">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Submit</button>
+                    <p id="toggle-auth">Not a user? <span id="switch-to-signup">Create an account</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
